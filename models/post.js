@@ -15,13 +15,14 @@ Post.init ({
         type: DataTypes.STRING,
         allowNull: false
     },
-    content: {
+    body: {
         type: DataTypes.TEXT,
         allowNull: false
     },
     date: {
         type: DataTypes.DATE,
-        allowNull: false
+        allowNull: false,
+        defaultValue: DataTypes.Now
     },
     user_id: {
         type: DataTypes.INTEGER,
